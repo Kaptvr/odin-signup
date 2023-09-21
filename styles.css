@@ -40,11 +40,12 @@ a {
   align-items: end;
   box-sizing: border-box;
   padding: 3px;
+  position:relative;
 }
 
 .form-column {
   z-index: 2;
-  background-color: mediumblue;
+  background-color: #eee;
   width: 70vw;
   flex: 1 1 auto;
   height: 100vh;
@@ -52,18 +53,18 @@ a {
 
 .logo-wrap {
   position: absolute;
-  left:0;
-  top:25%;
+  right:0;
+  top:100px;
   background-color: rgba(20, 20, 20, 0.2);
-  width: 30vw;
-  height: 150px;
+  width: 327px;
+  height: 95px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
 .logo {
-  height: inherit;
+  height: 250px;
   width: auto;
   opacity: 100%;
 }
@@ -72,4 +73,29 @@ a {
   font-family: apache, sans-serif;
   font-size: 120px;
   color: white;
+}
+
+.text {
+  font-family:monospace;
+  font-size: 24px;
+  width: 50%;
+  margin: 10% 0 0 50px;
+  font-weight: 700;
+}
+
+.form-box {
+  height: 200px;
+  width: inherit;
+  position: relative;
+  top: 3%;
+  background-color: white;
+  box-shadow: 2px 4px 10px #ccc;
+  padding: 20px 50px;
+}
+
+.form-box p {
+  font-family:monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #444;
 }

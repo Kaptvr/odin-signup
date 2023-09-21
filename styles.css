@@ -1,11 +1,19 @@
+@font-face {
+  font-family: apache;
+  src: url(./aldo_the_apache/AldotheApache.ttf);
+}
+
 body {
-  display:flex;
   margin: 0;
 }
 
 div {
   margin: 0;
   padding: 0;
+}
+
+.column {
+  display: flex;
 }
 
 .credit {
@@ -20,6 +28,7 @@ a {
 }
 
 .logo-column {
+  z-index: 1;
   background-size: cover;
   background-position-x: center;
   background-image: url(./marek-piwnicki-unsplash.jpg);
@@ -34,8 +43,33 @@ a {
 }
 
 .form-column {
+  z-index: 2;
   background-color: mediumblue;
   width: 70vw;
   flex: 1 1 auto;
   height: 100vh;
+}
+
+.logo-wrap {
+  position: absolute;
+  left:0;
+  top:25%;
+  background-color: rgba(20, 20, 20, 0.2);
+  width: 30vw;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: inherit;
+  width: auto;
+  opacity: 100%;
+}
+
+.etos {
+  font-family: apache, sans-serif;
+  font-size: 120px;
+  color: white;
 }

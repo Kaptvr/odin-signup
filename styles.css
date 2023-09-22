@@ -84,8 +84,11 @@ a {
 }
 
 .form-box {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
   width: inherit;
+  box-sizing:border-box;
   position: relative;
   top: 3%;
   background-color: white;
@@ -93,9 +96,64 @@ a {
   padding: 20px 50px;
 }
 
-.form-box p {
+.form-box {
   font-family:monospace;
   font-size: 24px;
   font-weight: 700;
   color: #444;
+}
+
+form {
+  padding: 10px 0;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.first-column, .second-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+input:focus {
+  box-shadow: 2px 2px 5px #777;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+input:valid, input:required {
+  border: 2px solid #ddd;
+}
+
+input:invalid {
+  border: 2px solid #d55;
+}
+
+.button {
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+button {
+  background-color: goldenrod;
+  border: none;
+  box-shadow: 2px 2px 8px #777;
+  padding: 8px 42px;
+  font-size: 24px;
+  color: white;
+  font-family: sans-serif;
+  border-radius: 10px;
 }

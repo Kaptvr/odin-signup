@@ -31,9 +31,44 @@
             </div>
             <div class="form-box">
                 <p>Let's do this!</p>
-                
+                <form action="" method="post" id="etos-form">
+                    <div class="first-column">
+                        <div class="input-field">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="johndoe@example.com" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" required>
+                        </div>
+                    </div>
+                    
+                    <div class="second-column">
+                        <div class="input-field">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="button">
+                <button class="button" type="submit" form="etos-form">Create Account</button>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+
